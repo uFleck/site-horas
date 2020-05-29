@@ -5,10 +5,10 @@ function carregar() {
     var data = new Date()
     var hora = data.getHours()
     var minutos = data.getMinutes()
-    msg.innerHTML = `Agora são <strong>${hora}</strong> horas e <strong>${minutos} minutos`
+    msg.innerHTML = `Agora são <strong>${hora}</strong> horas e <strong>${minutos}</strong> minutos`
     if (hora >= 0 && hora < 12) {
         img.src = 'imagens/manha.png'
-        document.body.style.background = '#b6b86d'
+        document.body.style.background = '#00ceff'
         mensagem.innerHTML = 'Bom dia!'
     } else if (hora >= 12 && hora <= 18) {
         img.src = 'imagens/tarde.png'
